@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Rythum - Music Player</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>🎵 Rythum 🎵</h1>
+
+        <div class="player">
+            <h2 id="title">Select a song</h2>
+            <audio id="audio" src=""></audio>
+
+            <div class="progress-container" onclick="setProgress(event)">
+                <div id="progress"></div>
+            </div>
+
+            <div class="controls">
+                <button onclick="prevSong()">⏮️</button>
+                <button onclick="playPause()">⏯️</button>
+                <button onclick="nextSong()">⏭️</button>
+            </div>
+        </div>
+
+        <div class="playlist">
+            <h3>Playlist</h3>
+            <ul id="playlist"></ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
